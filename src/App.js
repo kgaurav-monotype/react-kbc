@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './app.css';
 
 function App() {
-  const [question,setQuestion] = useState(1);
+  const [question] = useState(1);
   const moneyArr = [
     {id:1, amount: '₹ 5000'},
     {id:2, amount: '₹ 10000'},
@@ -26,7 +26,7 @@ function App() {
       <div className="pyramid">
         <ul className="moneyList">
           {moneyArr.map(m=>(
-            <li className={question == m.id ? "moneyListItem active" : "moneyListItem"}>
+            <li className={question === m.id ? "moneyListItem active" : "moneyListItem"}>
               <span className="moneyListItemNumber">{m.id}</span>
               <span className="moneyListItemAmount">{m.amount}</span>
             </li>
