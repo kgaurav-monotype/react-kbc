@@ -1,0 +1,36 @@
+.app{
+    height: 100vh;
+    background-color: #020230;
+    color: white;
+    display: flex;
+}
+
+.main {
+    width: 75%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url('./assets/kbc-2.png') center no-repeat;
+    background-size: cover;
+}
+.pyramid {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moneyList {
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+}
+.moneyListItem {
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.active {
+    background-color: teal;
+}
+.moneyListItemNumber {
+    width: 30%;
+}
